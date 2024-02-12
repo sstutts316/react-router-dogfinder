@@ -15,6 +15,8 @@ The routes should look like this:
 ### **Recommended Structure**
 
 You can preload the <App /> component with the following defaultProps for convenience:
+
+``` jsx
 App.defaultProps = {
   dogs: [
     {
@@ -59,6 +61,7 @@ App.defaultProps = {
     }
   ]
 }
+```
 
 The *<App />* should render:
 
@@ -67,6 +70,7 @@ The *<App />* should render:
 
 Here is an Example Snippet from the `render` method of *<App />* To Get You Started:
 
+``` jsx
 return (
   <Switch>
     <Route exact path="/dogs" >
@@ -78,6 +82,7 @@ return (
     <Redirect to="/dogs" />
   </Switch>
 );
+```
 ​
 In this example:
 <DogList /> takes all the dog info from the props of <App />
